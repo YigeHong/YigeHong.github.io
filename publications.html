@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications &middot; Yige Hong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html">Home</a>
+      <a href="publications.html" class="active">Publications</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Publications</h1>
+
+    <div class="view-toggle" id="view-toggle">
+      <button data-view="chrono">Chronological</button>
+      <button data-view="area">By area</button>
+    </div>
+
+    <p class="note">
+      *co-first-author, #undergraduate student jointly mentored with my Ph.D. advisor
+    </p>
+
+    <div id="pub-container"></div>
+  </main>
+
+  <footer>
+    &copy; Yige Hong
+  </footer>
+
+  <script src="data/publications.js"></script>
+  <script src="site.js"></script>
+  <script>initPublicationViews("pub-container", "view-toggle");</script>
+</body>
+</html>

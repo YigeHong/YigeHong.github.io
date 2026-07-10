@@ -1,5 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Yige Hong</title></head>
-<body><h1>Hi, I'm Yige Hong</h1></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yige Hong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="active">Home</a>
+      <a href="publications.html">Publications</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Yige Hong</h1>
+    <p class="subtitle">Ph.D. student, Computer Science Department, Carnegie Mellon University</p>
+
+    <div class="intro">
+      <img class="photo" src="assets/img/my_photo_cmu.jpeg" alt="Yige Hong">
+      <div class="bio">
+        <p>
+          I'm a sixth-year Ph.D. student in the Computer Science Department of
+          Carnegie Mellon University, where I'm very fortunate to be advised by
+          Professor <a href="http://www.cs.cmu.edu/~weinaw/">Weina Wang</a>.
+          I work on the performance analysis and optimal control of complex
+          stochastic systems such as multiserver jobs, the G/G/k model,
+          stochastic bin-packing, restless bandits, and weakly-coupled MDPs.
+          A particular emphasis of my work is understanding these systems at a
+          large scale, as motivated by the needs of data centers and other large
+          service systems. I use stochastic analysis tools such as Lyapunov
+          functions, coupling, and Stein's method to design scalable control
+          policies with provable guarantees.
+        </p>
+        <p>
+          Prior to starting my Ph.D., I was an undergraduate student at the
+          Chinese University of Hong Kong, Shenzhen (CUHKSZ), where I graduated
+          from the mathematics major with a Bachelor of Science degree.
+        </p>
+        <p class="contact">
+          <span class="label">Email:</span>
+          yigeh <span class="note">[at]</span> andrew <span class="note">[dot]</span> cmu <span class="note">[dot]</span> edu
+        </p>
+        <p class="links">
+          <a href="assets/pdf/Yige_Hong_CV.pdf">CV</a>
+          <span class="sep">/</span>
+          <a href="https://scholar.google.com/citations?user=D-5fj0kAAAAJ&hl=en">Google&nbsp;Scholar</a>
+          <span class="sep">/</span>
+          <a href="https://github.com/yigehong">GitHub</a>
+          <span class="sep">/</span>
+          <a href="https://dblp.org/pid/301/8925.html">DBLP</a>
+          <span class="sep">/</span>
+          <a href="https://www.linkedin.com/in/yige-hong-0491a0254/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="callout">
+      I will join the School of Science and Engineering at CUHK-Shenzhen in Fall 2027.
+      I am looking for motivated students to join my group.
+    </div>
+
+    <h2>Selected publications</h2>
+    <div id="selected-pubs"></div>
+    <p class="note">
+      See the <a href="publications.html">full list</a> of publications.
+    </p>
+  </main>
+
+  <footer>
+    &copy; Yige Hong
+  </footer>
+
+  <script src="data/publications.js"></script>
+  <script src="site.js"></script>
+  <script>renderSelectedPublications("selected-pubs");</script>
+</body>
 </html>

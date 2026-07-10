@@ -278,7 +278,13 @@
     if (!container) return;
     var pubs = (window.SELECTED_PUBLICATIONS || [])
       .map(byId)
-      .filter(Boolean);
+      .filter(Boolean)
+      .sort(function (a, b) {
+        // by first-appearance date, newest first
+        if (a.firstAppeared < b.firstAppeared) return 1;
+        if (a.firstAppeared > b.firstAppeared) return -1;
+        return 0;
+      });
     container.innerHTML = listHtml(pubs);
   };
 

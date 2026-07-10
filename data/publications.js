@@ -111,7 +111,7 @@ window.PUBLICATIONS = [
       { label: "poster", href: "assets/pdf/NeurIPS25_poster_v2.pdf", kind: "resource" },
       { label: "video", href: "https://neurips.cc/virtual/2025/loc/san-diego/poster/117242", kind: "resource" }
     ],
-    award: "Spotlight at NeurIPS (3.18% of submitted papers); Outstanding Student Poster Award at Stochastic Networks 2026",
+    award: "Spotlight at NeurIPS (3.18% of submissions); Outstanding Student Poster Award at Stochastic Networks 2026",
     bibtex: [
       "@inproceedings{ZhaHonWan_25_proj,",
       "  author    = {Zhang, Xiangcheng and Hong, Yige and Wang, Weina},",
@@ -161,7 +161,8 @@ window.PUBLICATIONS = [
     links: [
       { label: "MOR", href: "https://pubsonline.informs.org/doi/full/10.1287/moor.2024.0678", kind: "journal" },
       { label: "arxiv", href: "https://arxiv.org/abs/2402.05689", kind: "arxiv" },
-      { label: "slides", href: "assets/slides/informs2024v4-online.pdf", kind: "resource" }
+      { label: "slides", href: "assets/slides/informs2024v4-online.pdf", kind: "resource" },
+      { label: "blog", href: "https://www.cs.cmu.edu/~csd-phd-blog/2026/restless-bandits/", kind: "blog" }
     ],
     bibtex: [
       "@article{HonXieCheWan_24_moor,",
@@ -215,7 +216,7 @@ window.PUBLICATIONS = [
       { label: "video", href: "https://nips.cc/virtual/2023/poster/71907", kind: "resource" },
       { label: "poster", href: "assets/img/poster-neurips23-break-ugap-v2-final.png", kind: "resource" }
     ],
-    award: "Spotlight (3.06% of submitted papers)",
+    award: "Spotlight (3.06% of submissions)",
     bibtex: [
       "@inproceedings{HonXieCheWan_23_ugap,",
       "  author    = {Hong, Yige and Xie, Qiaomin and Chen, Yudong and Wang, Weina},",
@@ -285,7 +286,7 @@ window.PUBLICATIONS = [
     id: "multiserver-jobs",
     title: "Sharp Waiting-Time Bounds for Multiserver Jobs",
     shortTitle: "Sharp waiting-time bounds for multiserver jobs",
-    thumb: "assets/img/thumbs/multiserver-jobs.png",
+    thumb: "assets/img/thumbs/multiserver-jobs.png?v=2",
     authors: '<b>Yige Hong</b>, Weina Wang',
     area: "Queueing theory",
     firstAppeared: "2021-09",

@@ -70,10 +70,11 @@ h2 {
 
 /* ---- Home intro ---- */
 .intro { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+.intro-left { width: 180px; flex-shrink: 0; }
 .intro .photo {
-  width: 180px;
+  width: 100%;
   border-radius: 6px;
-  flex-shrink: 0;
+  display: block;
 }
 .intro .bio { flex: 1; min-width: 260px; }
 .intro .bio p:first-child { margin-top: 0; }
@@ -81,8 +82,14 @@ h2 {
 .contact { margin-top: 8px; margin-bottom: 4px; }
 .contact .label { font-weight: 600; }
 
-.links { margin-top: 0; font-weight: 500; }
-.links .sep { color: var(--border); margin: 0 6px; }
+/* Link list stacked under the photo. */
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  font-weight: 500;
+}
+.links li { padding: 3px 0; line-height: 1.35; }
 
 .callout {
   margin-top: 28px;
@@ -306,6 +313,8 @@ h2 {
 .link-conference:hover { background: #33517e; }
 .link-resource   { background: #f0f0f2; color: #555; }     /* slides/poster/... */
 .link-resource:hover { background: #555; }
+.link-blog       { background: #f0ebf9; color: #6d4c9f; }  /* blog post */
+.link-blog:hover { background: #6d4c9f; }
 
 /* Cite: outlined, to set the special action apart from the
    filled resource/venue pills. */
@@ -344,6 +353,25 @@ h2 {
 }
 .note { color: var(--muted); font-size: 0.9rem; }
 
+/* ---- Awards page ---- */
+.award-list { list-style: none; padding: 0; margin: 0; }
+.award-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.award-list li:last-child { border-bottom: none; }
+.award-name { font-weight: 500; }
+.award-paper { font-weight: 400; font-style: italic; color: var(--muted); }
+.award-year {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
 footer {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -355,7 +383,7 @@ footer {
 
 @media (max-width: 520px) {
   body { font-size: 16px; }
-  .intro .photo { width: 140px; }
+  .intro-left { width: 140px; }
   .area-cards { grid-template-columns: 1fr; }
   .pub-list li.has-thumb { flex-direction: column; }
   .pub-thumb { width: 100%; max-width: 220px; }

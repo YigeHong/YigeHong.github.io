@@ -3,7 +3,7 @@
 .unused/
 www alias
 # Private master BibTeX — kept local only, not for the public site
-bib/
+bib/refs.bib
 
 # --- macOS ---
 .DS_Store

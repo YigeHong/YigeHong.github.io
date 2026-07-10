@@ -2,6 +2,8 @@
 .old_website_260709/
 .unused/
 www alias
+# Private master BibTeX — kept local only, not for the public site
+bib/
 
 # --- macOS ---
 .DS_Store

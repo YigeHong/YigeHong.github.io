@@ -119,6 +119,7 @@ window.PUBLICATIONS = [
       "  booktitle = {Advances in Neural Information Processing Systems 38 (NeurIPS 2025)},",
       "  volume    = {38},",
       "  pages     = {91054--91076},",
+      "  doi       = {10.52202/085713-3045},",
       "  year      = {2025}",
       "}"
     ].join("\n")

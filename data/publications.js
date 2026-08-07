@@ -45,10 +45,11 @@ window.PUBLICATIONS = [
     shortTitle: "Optimality of a threshold policy for one-fast-two-slow queueing system",
     authors: 'Weina Wang, Taha Ameen, Yudong Chen, <b>Yige Hong</b>, Josh Nichols, Matthew Zurek',
     area: "Other topics",
-    firstAppeared: "2026-06",
-    venue: "Manuscript, 2026",
-    venueShort: "Manuscript 2026",
+    firstAppeared: "2026-07",
+    venue: "arXiv preprint, 2026",
+    venueShort: "arXiv 2026",
     links: [
+      { label: "arxiv", href: "https://arxiv.org/abs/2607.22580", kind: "arxiv" },
       { label: "pdf", href: "assets/pdf/One_fast_two_slow_conjecture.pdf", kind: "resource" }
     ],
     note:
@@ -67,7 +68,15 @@ window.PUBLICATIONS = [
       'rigor, clarity, and exposition. In addition, three key lemmas have also been verified ' +
       'in Lean 4 [<a href="https://github.com/JoshuaAN/one-fast-two-slow-conjecture">GitHub</a>]. ' +
       'We have included a short report at the end of the appendix describing the authors\' ' +
-      'interactions with GPT-5.5 Pro.</p>'
+      'interactions with GPT-5.5 Pro.</p>',
+    bibtex: [
+      "@article{WanEtAl_26_onefasttwoslow,",
+      "  author  = {Wang, Weina and Ameen, Taha and Chen, Yudong and Hong, Yige and Nichols, Josh and Zurek, Matthew},",
+      "  title   = {Optimality of a Threshold Policy for a Queueing System with One Fast Server and Two Identical Slow Servers},",
+      "  journal = {arXiv preprint arXiv:2607.22580},",
+      "  year    = {2026}",
+      "}"
+    ].join("\n")
   },
   {
     id: "leave-one-out",

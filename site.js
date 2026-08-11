@@ -28,13 +28,20 @@
     "Other topics": "Other topics"
   };
 
-  function linksHtml(links) {
+  // Link buttons for one work. Each carries a GoatCounter click-event
+  // name ("pub-<id>-<label>") so per-paper interest stays countable
+  // even though a work has no page of its own to record a view on.
+  function linksHtml(links, id) {
     if (!links || !links.length) return "";
     return links
       .map(function (l) {
         var kind = l.kind || "resource";
+        var event = ("pub-" + id + "-" + l.label)
+          .toLowerCase()
+          .replace(/[^a-z0-9-]+/g, "-");
         return (
-          '<a class="pub-link-btn link-' + kind + '" href="' + l.href + '">' +
+          '<a class="pub-link-btn link-' + kind + '" href="' + l.href + '"' +
+          ' data-goatcounter-click="' + event + '">' +
           l.label +
           "</a>"
         );
@@ -82,7 +89,7 @@
     var venue = '<div class="pub-venue">' + pub.venue + "</div>";
     var actions =
       '<div class="pub-actions">' +
-      linksHtml(pub.links) +
+      linksHtml(pub.links, pub.id) +
       citeHtml(pub) +
       "</div>";
     var award = pub.award

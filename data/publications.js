@@ -80,7 +80,7 @@ window.PUBLICATIONS = [
   },
   {
     id: "leave-one-out",
-    title: "A new 1/(1−ρ)-scaling bound for multiserver queues via a leave-one-out technique",
+    title: "An interpretable universal bound for multiserver queues via a leave-one-out technique",
     shortTitle: "Universal bound for multiserver queues via leave-one-out",
     thumb: "assets/img/thumbs/leave-one-out.png",
     authors: '<b>Yige Hong</b>',
@@ -92,10 +92,14 @@ window.PUBLICATIONS = [
       { label: "slides", href: "assets/slides/APS-v4-1-online.pdf", kind: "resource" },
       { label: "poster", href: "assets/pdf/YRW_poster_v1_251006.pdf", kind: "resource" }
     ],
+    note:
+      '<p>Previously titled &ldquo;A new 1/(1−ρ)-scaling bound for multiserver ' +
+      'queues via a leave-one-out technique&rdquo; (arXiv v1&ndash;v2). Citations ' +
+      'under the earlier title refer to this work.</p>',
     bibtex: [
       "@article{Hon_25_loo,",
       "  author     = {Hong, Yige},",
-      "  title      = {A new 1/(1-{\\(\\rho\\)})-scaling bound for multiserver queues via a leave-one-out technique},",
+      "  title      = {An interpretable universal bound for multiserver queues via a leave-one-out technique},",
       "  journal    = {CoRR},",
       "  volume     = {abs/2510.11015},",
       "  year       = {2025},",

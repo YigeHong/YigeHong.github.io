@@ -37,7 +37,17 @@ window.PUBLICATIONS = [
       { label: "openreview", href: "https://openreview.net/forum?id=hq2MPYXAko", kind: "conference" },
       { label: "poster", href: "https://icml.cc/virtual/2026/poster/62302", kind: "resource" }
     ],
-    award: "Spotlight at ICML (2.2% of submissions)"
+    award: "Spotlight at ICML (2.2% of submissions)",
+    bibtex: [
+      "@inproceedings{GaiEtAl_26_entropy,",
+      "  author    = {Gai, Jingchu and Zeng, Guanning and Zhang, Huaqing and Zhong, Han and Hong, Yige and Risteski, Andrej and Raghunathan, Aditi},",
+      "  title     = {Demystifying Entropy Control in {LLM} {RL} Training: Theoretical Analysis and Dynamic Scheduling},",
+      "  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML 2026)},",
+      "  year      = {2026},",
+      "  note      = {To appear; PMLR volume not yet assigned},",
+      "  url       = {https://openreview.net/forum?id=hq2MPYXAko}",
+      "}"
+    ].join("\n")
   },
   {
     id: "one-fast-two-slow",
@@ -73,8 +83,9 @@ window.PUBLICATIONS = [
       "@article{WanEtAl_26_onefasttwoslow,",
       "  author  = {Wang, Weina and Ameen, Taha and Chen, Yudong and Hong, Yige and Nichols, Josh and Zurek, Matthew},",
       "  title   = {Optimality of a Threshold Policy for a Queueing System with One Fast Server and Two Identical Slow Servers},",
-      "  journal = {arXiv preprint arXiv:2607.22580},",
-      "  year    = {2026}",
+      "  journal = {arXiv:2607.22580 [math.OC]},",
+      "  year    = {2026},",
+      "  url     = {https://arxiv.org/abs/2607.22580}",
       "}"
     ].join("\n")
   },
@@ -98,14 +109,12 @@ window.PUBLICATIONS = [
       'under the earlier title refer to this work.</p>',
     bibtex: [
       "@article{Hon_25_loo,",
-      "  author     = {Hong, Yige},",
-      "  title      = {An interpretable universal bound for multiserver queues via a leave-one-out technique},",
-      "  journal    = {CoRR},",
-      "  volume     = {abs/2510.11015},",
-      "  year       = {2025},",
-      "  doi        = {10.48550/ARXIV.2510.11015},",
-      "  eprint     = {2510.11015},",
-      "  eprinttype = {arXiv}",
+      "  author  = {Hong, Yige},",
+      "  title   = {An interpretable universal bound for multiserver queues via a leave-one-out technique},",
+      "  journal = {arXiv:2510.11015 [math.PR]},",
+      "  year    = {2025},",
+      "  doi     = {10.48550/arXiv.2510.11015},",
+      "  url     = {https://arxiv.org/abs/2510.11015}",
       "}"
     ].join("\n")
   },
@@ -133,6 +142,7 @@ window.PUBLICATIONS = [
       "  volume    = {38},",
       "  pages     = {91054--91076},",
       "  doi       = {10.52202/085713-3045},",
+      "  url       = {https://proceedings.neurips.cc/paper_files/paper/2025/file/832c9b595f2db0b6c1f4def491a877f8-Paper-Conference.pdf},",
       "  year      = {2025}",
       "}"
     ].join("\n")
@@ -152,14 +162,12 @@ window.PUBLICATIONS = [
     ],
     bibtex: [
       "@article{HonXieCheWan_24_exp,",
-      "  author     = {Hong, Yige and Xie, Qiaomin and Chen, Yudong and Wang, Weina},",
-      "  title      = {Achieving Exponential Asymptotic Optimality in Average-Reward Restless Bandits without Global Attractor Assumption},",
-      "  journal    = {CoRR},",
-      "  volume     = {abs/2405.17882},",
-      "  year       = {2024},",
-      "  doi        = {10.48550/ARXIV.2405.17882},",
-      "  eprint     = {2405.17882},",
-      "  eprinttype = {arXiv}",
+      "  author  = {Hong, Yige and Xie, Qiaomin and Chen, Yudong and Wang, Weina},",
+      "  title   = {Achieving Exponential Asymptotic Optimality in Average-Reward Restless Bandits without Global Attractor Assumption},",
+      "  journal = {arXiv:2405.17882 [cs.LG]},",
+      "  year    = {2024},",
+      "  doi     = {10.48550/arXiv.2405.17882},",
+      "  url     = {https://arxiv.org/abs/2405.17882}",
       "}"
     ].join("\n")
   },
@@ -185,7 +193,8 @@ window.PUBLICATIONS = [
       "  journal = {Mathematics of Operations Research},",
       "  note    = {Articles in Advance},",
       "  year    = {2025},",
-      "  doi     = {10.1287/moor.2024.0678}",
+      "  doi     = {10.1287/moor.2024.0678},",
+      "  url     = {https://doi.org/10.1287/moor.2024.0678}",
       "}"
     ].join("\n")
   },
@@ -210,7 +219,8 @@ window.PUBLICATIONS = [
       "  volume  = {162},",
       "  pages   = {102378},",
       "  year    = {2023},",
-      "  doi     = {10.1016/J.PEVA.2023.102378}",
+      "  doi     = {10.1016/J.PEVA.2023.102378},",
+      "  url     = {https://doi.org/10.1016/j.peva.2023.102378}",
       "}"
     ].join("\n")
   },
@@ -238,7 +248,8 @@ window.PUBLICATIONS = [
       "  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023)},",
       "  volume    = {36},",
       "  pages     = {12810--12844},",
-      "  year      = {2023}",
+      "  year      = {2023},",
+      "  url       = {http://papers.nips.cc/paper_files/paper/2023/hash/2a0babff3ddd4ba12062219ec161ce86-Abstract-Conference.html}",
       "}"
     ].join("\n")
   },
@@ -265,7 +276,8 @@ window.PUBLICATIONS = [
       "  volume  = {163},",
       "  pages   = {102377},",
       "  year    = {2024},",
-      "  doi     = {10.1016/J.PEVA.2023.102377}",
+      "  doi     = {10.1016/J.PEVA.2023.102377},",
+      "  url     = {https://doi.org/10.1016/j.peva.2023.102377}",
       "}"
     ].join("\n")
   },
@@ -292,7 +304,8 @@ window.PUBLICATIONS = [
       "  number  = {3},",
       "  pages   = {48:1--48:46},",
       "  year    = {2023},",
-      "  doi     = {10.1145/3626779}",
+      "  doi     = {10.1145/3626779},",
+      "  url     = {https://doi.org/10.1145/3626779}",
       "}"
     ].join("\n")
   },
@@ -321,7 +334,8 @@ window.PUBLICATIONS = [
       "  number  = {4},",
       "  pages   = {455--478},",
       "  year    = {2024},",
-      "  doi     = {10.1287/stsy.2023.0006}",
+      "  doi     = {10.1287/stsy.2023.0006},",
+      "  url     = {https://doi.org/10.1287/stsy.2023.0006}",
       "}"
     ].join("\n")
   }

@@ -25,6 +25,18 @@
    ============================================================ */
 window.PUBLICATIONS = [
   {
+    id: "kingman-bound-note",
+    title: "The Kingman Bound Basically Holds in the GI/GI/n",
+    authors: 'Amit Harlev, <b>Yige Hong</b>, Ziv Scully',
+    area: "Queueing theory",
+    firstAppeared: "2026-08",
+    venue: "Proof note, August 2026",
+    venueShort: "Proof note 2026",
+    links: [
+      { label: "pdf", href: "https://amitharlev.com/assets/pdf/harlev-2026-kingmanbound-note.pdf", kind: "resource" }
+    ]
+  },
+  {
     id: "entropy-control-llm",
     title: "Demystifying Entropy Control in LLM RL Training: Theoretical Analysis and Dynamic Scheduling",
     shortTitle: "Demystifying entropy control in LLM RL training",

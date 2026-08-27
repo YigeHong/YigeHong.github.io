@@ -4,6 +4,8 @@
 www alias
 # Private master BibTeX — kept local only, not for the public site
 bib/refs.bib
+# Unpublished drafts (works held back from the site) — local only
+.drafts/
 
 # --- macOS ---
 .DS_Store

@@ -112,6 +112,16 @@
     return '<ul class="pub-list">' + pubs.map(entryHtml).join("") + "</ul>";
   }
 
+  // GoatCounter binds its click handlers once, on page load, so link
+  // buttons inserted by a later re-render (switching views or area
+  // cards) would go uncounted. Re-binding is idempotent: count.js
+  // skips elements it has already bound.
+  function bindClicks() {
+    if (window.goatcounter && window.goatcounter.bind_events) {
+      window.goatcounter.bind_events();
+    }
+  }
+
   function byId(id) {
     for (var i = 0; i < window.PUBLICATIONS.length; i++) {
       if (window.PUBLICATIONS[i].id === id) return window.PUBLICATIONS[i];
@@ -157,6 +167,7 @@
     });
     flushGroup();
     container.innerHTML = html;
+    bindClicks();
   }
 
   function setHash(h) {
@@ -215,6 +226,7 @@
         return p.area === area;
       });
       listEl.innerHTML = listHtml(inArea);
+      bindClicks();
       for (var i = 0; i < cards.length; i++) {
         cards[i].classList.toggle("active", i === idx);
       }
@@ -293,6 +305,7 @@
         return 0;
       });
     container.innerHTML = listHtml(pubs);
+    bindClicks();
   };
 
   // Publications page: wire up the two-view toggle. The chosen

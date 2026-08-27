@@ -351,6 +351,35 @@ h2 {
   font-weight: 500;
   color: var(--text);
 }
+
+/* Display equation inside a note. Built from plain HTML, Unicode
+   symbols and a border-bottom fraction bar, so the site stays
+   build-free and pulls in no math-typesetting library. */
+.pub-note .pub-eq {
+  margin: 12px 0;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: var(--text);
+  overflow-x: auto;
+}
+.pub-eq .frac {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 5px;
+}
+.pub-eq .frac-num {
+  display: block;
+  padding: 0 7px 3px;
+  border-bottom: 1px solid currentColor;
+  white-space: nowrap;
+}
+.pub-eq .frac-den {
+  display: block;
+  padding: 3px 7px 0;
+}
 .note { color: var(--muted); font-size: 0.9rem; }
 
 /* ---- Awards page ---- */

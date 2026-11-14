@@ -13,7 +13,7 @@
   var AREA_ORDER = [
     "Restless bandits & Weakly-Coupled Markov Decision Processes",
     "Queueing theory",
-    "Other topics"
+    "RL, and an AI-generated paper"
   ];
   var AREA_IMAGE = {
     "Restless bandits & Weakly-Coupled Markov Decision Processes":
@@ -25,7 +25,7 @@
   var AREA_LABEL = {
     "Restless bandits & Weakly-Coupled Markov Decision Processes": "RBs & WCMDPs",
     "Queueing theory": "Queueing theory",
-    "Other topics": "Other topics"
+    "RL, and an AI-generated paper": "RL, and an AI-generated paper"
   };
 
   // Link buttons for one work. Each carries a GoatCounter click-event
@@ -191,7 +191,7 @@
     });
 
     // Areas with a figure render as image cards; image-less areas
-    // (e.g. "Other topics") render as a slim bar below. Clicking
+    // (e.g. "RL, and an AI-generated paper") render as a slim bar below. Clicking
     // any one shows that area's list. First area open by default.
     var cardsHtml = "";
     var barsHtml = "";
@@ -342,12 +342,12 @@
     }
 
     // Restore view + area from the URL hash on load; default to
-    // the by-area view.
-    if (location.hash === "#chronological") {
-      show("chrono", 0, false);
+    // the chronological view.
+    var m = location.hash.match(/^#by-area(?:-(\d+))?$/);
+    if (m) {
+      show("area", m[1] ? parseInt(m[1], 10) : 0, false);
     } else {
-      var m = location.hash.match(/^#by-area(?:-(\d+))?$/);
-      show("area", m && m[1] ? parseInt(m[1], 10) : 0, false);
+      show("chrono", 0, false);
     }
   };
 })();

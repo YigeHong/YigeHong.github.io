@@ -13,7 +13,7 @@
   var AREA_ORDER = [
     "Restless bandits & Weakly-Coupled Markov Decision Processes",
     "Queueing theory",
-    "RL, and an AI-generated paper"
+    "RL, and an AI-discovered proof"
   ];
   var AREA_IMAGE = {
     "Restless bandits & Weakly-Coupled Markov Decision Processes":
@@ -25,7 +25,7 @@
   var AREA_LABEL = {
     "Restless bandits & Weakly-Coupled Markov Decision Processes": "RBs & WCMDPs",
     "Queueing theory": "Queueing theory",
-    "RL, and an AI-generated paper": "RL, and an AI-generated paper"
+    "RL, and an AI-discovered proof": "RL, and an AI-discovered proof"
   };
 
   // Link buttons for one work. Each carries a GoatCounter click-event
@@ -191,7 +191,7 @@
     });
 
     // Areas with a figure render as image cards; image-less areas
-    // (e.g. "RL, and an AI-generated paper") render as a slim bar below. Clicking
+    // (e.g. "RL, and an AI-discovered proof") render as a slim bar below. Clicking
     // any one shows that area's list. First area open by default.
     var cardsHtml = "";
     var barsHtml = "";

@@ -170,7 +170,7 @@ h2 {
   line-height: 1.3;
 }
 
-/* Slim bar for image-less areas (e.g. "RL, and an AI-generated paper"). */
+/* Slim bar for image-less areas (e.g. "RL, and an AI-discovered proof"). */
 .area-bars { margin: 0 0 24px; }
 .area-bar {
   display: flex;
